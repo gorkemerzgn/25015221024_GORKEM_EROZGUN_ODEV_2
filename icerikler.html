@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bağımsız oyun geliştirmeye başlamak için pixel art, oyun mekaniği, hikâye, game jam, ses ve test rehberleri.">
+  <title>İçerikler | Indie Kampüs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Indie Kampüs ana sayfa">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>indie<span class="brand-accent">kampüs</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Ana menü">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="icerikler.html" aria-current="page">İçerikler</a>
+      <a href="hakkinda.html">Hakkında</a>
+    </nav>
+  </header>
+
+  <main class="page-shell content-page">
+    <section class="content-intro">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> Üretim araç çantan</p>
+      <h1>Fikrini oyuna <span>dönüştür.</span></h1>
+      <p>İhtiyacın olan başlığı bul, ilk denemeni yap ve öğrendiklerini kendi projenle birleştir.</p>
+      <span class="intro-stamp" aria-hidden="true">6<br>REHBER</span>
+    </section>
+
+    <section class="library" aria-label="Oyun geliştirme içerikleri">
+      <div class="search-row">
+        <div class="search-field">
+          <label for="content-search">İçerik başlıklarında ara</label>
+          <div class="input-wrap">
+            <span class="search-symbol" aria-hidden="true">⌕</span>
+            <input id="content-search" name="content-search" type="search" autocomplete="off" placeholder="Örn. pixel art, ses, playtest">
+            <button id="clear-search" class="clear-button" type="button">Temizle</button>
+          </div>
+        </div>
+        <p id="results-count" class="results-count" aria-live="polite">6 içerik gösteriliyor</p>
+      </div>
+
+      <p id="no-results" class="no-results" hidden>Bu başlıkla eşleşen içerik bulunamadı. Başka bir kelime deneyebilirsin.</p>
+
+      <div class="content-grid" id="content-grid">
+        <article class="content-card card-coral" tabindex="0">
+          <div class="card-topline"><span class="category-badge">GÖRSEL TASARIM</span><span class="card-index">01 / 06</span></div>
+          <h3>Pixel Art ve Sprite Animasyon Rehberi</h3>
+          <p class="card-summary">Piksel piksel karakter çiz, okunaklı sprite’lar hazırla ve animasyonlarına hayat ver.</p>
+          <div class="card-details">
+            <dl>
+              <div><dt>Kullanılan araçlar</dt><dd>Aseprite, Piskel</dd></div>
+              <div><dt>Zorluk seviyesi</dt><dd>Başlangıç</dd></div>
+              <div><dt>Kazanımlar</dt><dd>Sprite sayfası, yürüme döngüsü, renk paleti</dd></div>
+            </dl>
+          </div>
+          <span class="card-motif" aria-hidden="true">▦</span>
+        </article>
+
+        <article class="content-card card-blue" tabindex="0">
+          <div class="card-topline"><span class="category-badge">PROGRAMLAMA</span><span class="card-index">02 / 06</span></div>
+          <h3>JavaScript ile 2D Clicker Oyun Mekanikleri</h3>
+          <p class="card-summary">Tıklamayla başlayan döngüyü puan, yükseltme ve geri bildirimle tatmin edici kıl.</p>
+          <div class="card-details">
+            <dl>
+              <div><dt>Kullanılan araçlar</dt><dd>JavaScript, HTML Canvas</dd></div>
+              <div><dt>Zorluk seviyesi</dt><dd>Başlangıç – Orta</dd></div>
+              <div><dt>Kazanımlar</dt><dd>Skor sistemi, yükseltmeler, oyun döngüsü</dd></div>
+            </dl>
+          </div>
+          <span class="card-motif" aria-hidden="true">◉</span>
+        </article>
+
+        <article class="content-card card-green" tabindex="0">
+          <div class="card-topline"><span class="category-badge">ANLATIM</span><span class="card-index">03 / 06</span></div>
+          <h3>Oyun Dünyası Tasarımı ve Hikâye Anlatımı</h3>
+          <p class="card-summary">Mekânları, karakterleri ve oyuncu seçimlerini aynı dünyanın parçaları olarak tasarla.</p>
+          <div class="card-details">
+            <dl>
+              <div><dt>Kullanılan araçlar</dt><dd>Not defteri, Miro, Twine</dd></div>
+              <div><dt>Zorluk seviyesi</dt><dd>Orta</dd></div>
+              <div><dt>Kazanımlar</dt><dd>Dünya taslağı, karakter motivasyonu, anlatı akışı</dd></div>
+            </dl>
+          </div>
+          <span class="card-motif" aria-hidden="true">⌘</span>
+        </article>
+
+        <article class="content-card card-yellow" tabindex="0">
+          <div class="card-topline"><span class="category-badge">GAME JAM</span><span class="card-index">04 / 06</span></div>
+          <h3>48 Saatlik Kampüs Game Jam Hazırlık Kılavuzu</h3>
+          <p class="card-summary">Ekip rolünden uyku planına, iki günlük üretim maratonuna hazırlıklı gir.</p>
+          <div class="card-details">
+            <dl>
+              <div><dt>Kullanılan araçlar</dt><dd>İş bölümü panosu, Git, prototip motoru</dd></div>
+              <div><dt>Zorluk seviyesi</dt><dd>Başlangıç</dd></div>
+              <div><dt>Kazanımlar</dt><dd>Jam kontrol listesi, ekip planı, kapsam belirleme</dd></div>
+            </dl>
+          </div>
+          <span class="card-motif" aria-hidden="true">✳</span>
+        </article>
+
+        <article class="content-card card-lilac" tabindex="0">
+          <div class="card-topline"><span class="category-badge">SES TASARIMI</span><span class="card-index">05 / 06</span></div>
+          <h3>Bağımsız Oyunlarda Ses Efektleri ve Müzik Üretimi</h3>
+          <p class="card-summary">Basit kayıtlar ve katmanlarla oyunun hissini güçlendiren sesler üret.</p>
+          <div class="card-details">
+            <dl>
+              <div><dt>Kullanılan araçlar</dt><dd>Audacity, LMMS, kendi ses kayıtların</dd></div>
+              <div><dt>Zorluk seviyesi</dt><dd>Başlangıç – Orta</dd></div>
+              <div><dt>Kazanımlar</dt><dd>Ses efektleri, kısa tema, dengeli ses seviyesi</dd></div>
+            </dl>
+          </div>
+          <span class="card-motif" aria-hidden="true">♫</span>
+        </article>
+
+        <article class="content-card card-mint" tabindex="0">
+          <div class="card-topline"><span class="category-badge">TEST & İYİLEŞTİRME</span><span class="card-index">06 / 06</span></div>
+          <h3>Indie Oyunlar İçin Playtest ve Hata Ayıklama</h3>
+          <p class="card-summary">Oyuncuyu gözlemle, hataları yeniden üret ve geri bildirimi sonraki adıma çevir.</p>
+          <div class="card-details">
+            <dl>
+              <div><dt>Kullanılan araçlar</dt><dd>Tarayıcı geliştirici araçları, hata günlüğü</dd></div>
+              <div><dt>Zorluk seviyesi</dt><dd>Orta</dd></div>
+              <div><dt>Kazanımlar</dt><dd>Test senaryosu, hata kaydı, önceliklendirme</dd></div>
+            </dl>
+          </div>
+          <span class="card-motif" aria-hidden="true">⌁</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">indiekampüs<span> / birlikte üret</span></a>
+    <p>Üniversiteliler için bağımsız oyun geliştirme topluluğu.</p>
+    <a href="hakkinda.html">Topluluk hakkında <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>
