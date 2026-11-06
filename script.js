@@ -7,11 +7,11 @@ if (searchInput && clearButton) {
   const noResults = document.querySelector('#no-results');
 
   function filterCards() {
-    const query = searchInput.value.trim().toLocaleLowerCase('tr-TR');
+    const query = searchInput.value.trim().toLocaleLowerCase('tr-TR').replace(/ı/g, 'i');
     let visibleCount = 0;
 
     cards.forEach((card) => {
-      const title = card.querySelector('h3').textContent.toLocaleLowerCase('tr-TR');
+      const title = card.querySelector('h3').textContent.trim().toLocaleLowerCase('tr-TR').replace(/ı/g, 'i');
       const matches = title.includes(query);
       card.hidden = !matches;
       visibleCount += Number(matches);
